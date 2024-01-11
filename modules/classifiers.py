@@ -76,8 +76,7 @@ class ClassifierCNNLarge(nn.Module):
         return x
 
 
-class ClassifierViT(nn.Module):
-
+class ClassifierViT(nn.Module):  # adapted from https://github.com/facebookresearch/mae
     def __init__(self, embed_dim, num_classes):
         super().__init__()
         self.bn_1 = nn.BatchNorm1d(embed_dim, affine=False, eps=1e-6)

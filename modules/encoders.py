@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-from torch.nn.functional import softplus
 from timm.models.vision_transformer import PatchEmbed, Block
 
 
@@ -130,7 +129,7 @@ class EncoderCNNLarge(nn.Module):
         return x
 
 
-class EncoderViT(nn.Module):
+class EncoderViT(nn.Module):  # adapted from https://github.com/facebookresearch/mae
 
     def __init__(self, img_size, patch_size, embed_dim, num_heads, mlp_ratio, depth, in_chans=1, drop_path=0.0):
         super().__init__()

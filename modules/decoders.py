@@ -106,12 +106,11 @@ class DecoderCNNLarge(nn.Module):
         return x
 
 
-class DecoderViT(nn.Module):
+class DecoderViT(nn.Module):  # adapted from https://github.com/facebookresearch/mae
 
     def __init__(self, embed_dim, decoder_embed_dim, num_patches, decoder_num_heads, mlp_ratio, decoder_depth,
                  patch_size, in_chans):
         super().__init__()
-
         norm_layer = nn.LayerNorm
         self.decoder_embed = nn.Linear(embed_dim, decoder_embed_dim, bias=True)
 

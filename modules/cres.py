@@ -1,28 +1,5 @@
-# cres = classification-reconstruction-encoders
-# CRAE = classification-reconstruction-autoencoder
-# CRVAE = classification-reconstruction-variational-autoencoder
-import torch.nn as nn
-import torch
-
-# Copyright (c) Meta Platforms, Inc. and affiliates.
-# All rights reserved.
-
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-# --------------------------------------------------------
-# References:
-# timm: https://github.com/rwightman/pytorch-image-models/tree/master/timm
-# DeiT: https://github.com/facebookresearch/deit
-# --------------------------------------------------------
-
-from functools import partial
-from torchinfo import summary
-
 import torch
 import torch.nn as nn
-
-from timm.models.vision_transformer import PatchEmbed, Block
-
 from modules.utils import get_2d_sincos_pos_embed
 
 
@@ -41,7 +18,7 @@ class CRE(nn.Module):
 
 
 class CREViT(nn.Module):
-    """ Masked Autoencoder with VisionTransformer backbone"""
+    """ Masked Autoencoder with VisionTransformer backbone adapted from https://github.com/facebookresearch/mae"""
 
     def __init__(self, encoder, decoder, classifier):
         super().__init__()

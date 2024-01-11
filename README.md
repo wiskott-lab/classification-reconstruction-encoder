@@ -1,2 +1,30 @@
-# classification-reconstruction-encoder
-Implementation of the CRE used in  TODO
+# Classification Reconstruction Encoder (CRE) Project
+
+## Overview
+This repository hosts the official implementation of the paper "Classification and Reconstruction Processes in 
+Deep Predictive Coding Networks: Antagonists or Allies?" Within this repository, we provide the implementation
+of the primary tool discussed in the paper, the Classification Reconstruction Encoder (CRE), 
+along with the necessary training scripts.
+
+## Requirements
+- Python 3.9.6.
+- timm 0.9.5
+- torch 2.0.1 
+- torchvision 0.15.2
+- numpy 1.25.1
+
+
+## Installation
+Clone the repository to your local machine and install the requirements.
+
+## Usage
+To train a FC-based or CNN-based CRE, run the training script train_cre.py. To train a CNN-based CRE, run the training
+script train_cre_vit.py. Model and training parameters can be changed in both training scripts.
+
+## Citation
+TODO
+
+## Contact
+For questions and feedback, contact us at [jan.rathjens@rub.de](mailto:jan.rathjens@rub.de).
+
+
