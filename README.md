@@ -18,7 +18,7 @@ along with the necessary training scripts.
 Clone the repository to your local machine and install the requirements.
 
 ## Usage
-To train a FC-based or CNN-based CRE, run the training script train_cre.py. To train a CNN-based CRE, run the training
+To train a FC-based or CNN-based CRE, run the training script train_cre.py. To train a ViT-based CRE, run the training
 script train_cre_vit.py. Model and training parameters can be changed in both training scripts.
 
 ## Citation
