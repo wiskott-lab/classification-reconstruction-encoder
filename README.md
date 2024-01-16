@@ -1,4 +1,4 @@
-# Classification Reconstruction Encoder (CRE) Project
+# Classification Reconstruction Encoder
 
 ## Overview
 This repository hosts the official implementation of the paper "Classification and Reconstruction Processes in 
