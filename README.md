@@ -27,4 +27,7 @@ TODO
 ## Contact
 For questions and feedback, contact us at [jan.rathjens@rub.de](mailto:jan.rathjens@rub.de).
 
+## License
+This project is under the BSD-3-Clause license. See [LICENSE](LICENSE) for details.
+
 
