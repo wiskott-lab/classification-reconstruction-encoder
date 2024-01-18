@@ -21,7 +21,7 @@ To train a FC-based or CNN-based CRE, run the training script train_cre.py. To t
 script train_cre_vit.py. Model and training parameters can be changed in both training scripts.
 
 ## Citation
-'''
+```bibtex
 @Article{rathjens2024classification,
       title={Classification and Reconstruction Processes in Deep Predictive Coding Networks: Antagonists or Allies?}, 
       author={Jan Rathjens and Laurenz Wiskott},
@@ -30,7 +30,8 @@ script train_cre_vit.py. Model and training parameters can be changed in both tr
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
-'''
+```
+
 ## Contact
 For questions and feedback, contact us at [jan.rathjens@rub.de](mailto:jan.rathjens@rub.de).
 
